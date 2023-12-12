@@ -1,5 +1,3 @@
-altair
-numpy
+plotly
 pandas
-pydeck
 streamlit

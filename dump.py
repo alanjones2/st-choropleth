@@ -48,3 +48,16 @@ fig = px.choropleth(df, geojson=oz, color="Population at 31 March 2023 ('000)",
 fig.update_geos(fitbounds="locations")#, visible=True)
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 st.plotly_chart(fig)
+
+f = open('/geo/countries.geo.json')
+world = json.load(f)
+
+fig = px.choropleth_mapbox(df_total_2021, geojson=world, locations='Code', color=col,
+                           color_continuous_scale="Reds",
+                           range_color=(min,max),
+                           mapbox_style="carto-positron",
+                           zoom=0, center = {"lat": 0, "lon": 0},
+                           opacity=0.2,
+                           labels={col:col}
+                        )
+st.plotly_chart(fig)

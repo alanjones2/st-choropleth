@@ -8,6 +8,8 @@ https://www.abs.gov.au/statistics/people/population/national-state-and-territory
 Australian Bureau of Statistics (March 2023), [National, state and territory population](
 https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release), ABS Website, accessed 13 December 2023.
 
+[CC BY 4.0 DEED](https://creativecommons.org/licenses/by/4.0/)
+
 GeoJSON from [Click that Hood on GitHub](
 https://github.com/codeforgermany/click_that_hood)
 

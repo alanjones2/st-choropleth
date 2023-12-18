@@ -3,6 +3,8 @@ import pandas as pd
 import plotly.express as px
 import json
 
+st.set_page_config(layout="wide")
+
 st.title("CO2 Emissions")
 st.write("""The following map displays the CO2 emissions for a
             range of countries over a range of time""")

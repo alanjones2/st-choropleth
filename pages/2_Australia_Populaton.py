@@ -3,23 +3,39 @@ import pandas as pd
 import plotly.express as px
 import json
 
-st.title("Australian states population")
+st.set_page_config(layout="wide")
+
+st.title("Population of Australian States")
 st.info("Hover over the map to see the names of the states and their population")
 
 f = open('geo/australia.geojson')
 oz = json.load(f)
-# oz["features"][0]
+#oz["features"][1]
 
 
 df = pd.read_csv('data/Australian Bureau of Statistics.csv')
 
-fig = px.choropleth(df, geojson=oz, color="Population at 31 March 2023 ('000)",
-                    locations="State", featureidkey="properties.name",
-                    projection="mercator",
+col1, col2 = st.columns(2)
+
+fig = px.choropleth(df, geojson=oz, 
+                    color="Population at 31 March 2023 ('000)",
+                    locations="State", 
+                    featureidkey="properties.name",
                     color_continuous_scale="Reds",
                     range_color=(0, 10000),
+                    fitbounds = 'geojson',
                     template = 'plotly_dark'
                    )
-fig.update_geos(fitbounds="locations")
-fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-st.plotly_chart(fig)
+col1.plotly_chart(fig)
+
+fig = px.scatter_geo(df, geojson=oz, 
+                    color="Population at 31 March 2023 ('000)",
+                    size="Population at 31 March 2023 ('000)",
+                    locations="State", 
+                    featureidkey="properties.name",
+                    color_continuous_scale="Blues",
+                    range_color=(0, 10000),
+                    fitbounds = 'geojson',
+                    template = 'plotly_dark'
+                   )
+col2.plotly_chart(fig)

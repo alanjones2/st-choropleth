@@ -1,4 +1,4 @@
-# Plotly choropleth maps and dashboard with Streamlit
+# Plotly maps and dashboard with Streamlit
 
 This repo contains a dashboard app that demonstrates the use of Plotly Chorpleths and Scatter maps and 
 constructs a CO2 emissions dashboard and support the Medium article [__How to create a simple GIS map with Plotly and Streamlit__](#)
@@ -33,3 +33,7 @@ GeoJSON from [world.geo.json](https://github.com/johan/world.geo.json) - licence
 See more about map projections on [Wikipedia](
 https://en.wikipedia.org/wiki/Map_projection)
 
+
+If you have found this repo useful, please consider this:
+
+<a href='https://ko-fi.com/M4M64THKG' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>

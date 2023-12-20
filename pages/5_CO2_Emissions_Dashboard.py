@@ -120,5 +120,3 @@ with col2:
 # set the header with the new year data
 emissions = df_w[df_w['Year']==st.session_state['year']]['Annual CO₂ emissions']
 colh2.metric(label=f"__Total emissions for {st.session_state['year']}__", value=emissions)
-
-

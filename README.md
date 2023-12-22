@@ -1,7 +1,7 @@
 # Plotly maps and dashboard with Streamlit
 
 This repo contains a dashboard app that demonstrates the use of Plotly Chorpleths and Scatter maps and 
-constructs a CO2 emissions dashboard and support the Medium article [__How to create a simple GIS map with Plotly and Streamlit__](#)
+constructs a CO2 emissions dashboard and support the Medium article [__How to create a simple GIS map with Plotly and Streamlit__](https://towardsdatascience.com/how-to-create-a-simple-gis-map-with-plotly-and-streamlit-7732d67b84e2)
 
 The app is in the Streamlit Communitiy Cloud and can be found [here](https://co2-dashboard.streamlit.app/). 
 

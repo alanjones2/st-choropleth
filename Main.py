@@ -8,7 +8,7 @@ st.markdown("""
             
 ### Select the pages from the sidebar to see demonstrations of the various aspects of Plotly's map functions.
 
-#### The app is is described and documented in the tutorial [__*How to create a GIS with Plotly and Streamlit*__](#).
+#### The app is is described and documented in the tutorial [__*How to create a GIS with Plotly and Streamlit*__](https://towardsdatascience.com/how-to-create-a-simple-gis-map-with-plotly-and-streamlit-7732d67b84e2).
             
 ---
 """)
